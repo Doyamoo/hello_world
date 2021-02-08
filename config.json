@@ -1,0 +1,15 @@
+{
+  "listeners": {
+    "*:8081": {
+      "pass": "applications/hello_world"
+    }
+  },
+
+  "applications": {
+    "hello_world": {
+      "type": "python 3.7.9",
+      "path": "/var/www/hello_world/",
+      "module": "app"
+    }
+  }
+}
